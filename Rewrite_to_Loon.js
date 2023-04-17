@@ -48,7 +48,10 @@ var Pout0 = urlArg.search(/\?x=|&x=/) != -1 ? (urlArg.split(/\?x=|&x=/)[1].split
 var hnAdd = urlArg.search(/\?hnadd=|&hnadd=/) != -1 ? (urlArg.split(/\?hnadd=|&hnadd=/)[1].split("&")[0].replace(/%20/g,"").split(",")) : null;
 var hnDel = urlArg.search(/\?hndel=|&hndel=/) != -1 ? (urlArg.split(/\?hndel=|&hndel=/)[1].split("&")[0].replace(/%20/g,"").split(",")) : null;
 var jsConverter = urlArg.search(/\?jsc=|&jsc=/) != -1 ? (urlArg.split(/\?jsc=|&jsc=/)[1].split("&")[0].split("+")) : null;
-var iconStatus = urlArg.search(/\?i=|&i=/);
+
+var match = urlArg.match(/[?&]i=([^&]+)/);
+var iconStatus = match ? match[1] : null;
+
 var icon = "";
 var delNoteSc = urlArg.search(/\?del=|&del=/) != -1 ? true : false;
 //修改名字和简介
@@ -68,7 +71,7 @@ if (isShadowrocket || isLooniOS ||isSurgeiOS || isLanceX || isEgern){
 };
 
 //随机图标开关，不传入参数默认为开
-if (iconStatus == "" ||iconStatus == null){
+if (iconStatus == null){
 	icon = "#!icon=";
 }else{
 	const stickerStartNum = 1000;
