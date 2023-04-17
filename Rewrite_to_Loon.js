@@ -77,7 +77,7 @@ if (iconStatus == null){
 	const stickerStartNum = 1000;
 const stickerSum = 335;
 let randomStickerNum = parseInt(stickerStartNum + Math.random() * stickerSum).toString();
-   icon = "#!icon=" + "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/" + iconStatus +".png";
+   icon = "#!icon=" + "https://github.com/Koolson/Qure/tree/master/IconSet/Color/" + iconStatus +".png";
 };
 !(async () => {
   let body = await http(req);
