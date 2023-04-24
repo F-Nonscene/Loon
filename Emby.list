@@ -1,7 +1,7 @@
 # Emby分流
 
 # MisakaF
-DOMAIN,cnd.misakaf.org,DIRECT
+DOMAIN,cdn.misakaf.org,DIRECT
 
 #Nebula
 DOMAIN-SUFFIX,nebula-emby.com,DIRECT
