@@ -1,0 +1,16 @@
+# Emby分流
+
+# MisakaF
+DOMAIN,cnd.misakaf.org,DIRECT
+
+#Nebula
+DOMAIN-SUFFIX,nebula-emby.com,DIRECT
+
+#Atvii
+DOMAIN-SUFFIX,atvii.com,DIRECT
+
+#AceEmby
+DOMAIN-SUFFIX,acemby.org,DIRECT
+
+#兜底
+# DOMAIN-KEYWORD,emby,PROXY
