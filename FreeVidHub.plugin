@@ -1,0 +1,19 @@
+#!name= VidHub播放增强
+#!desc= 解除纸片人小战VidHub播放限制
+#!author= guicc
+#!homepage= https://github.com/luestr/ProxyResource/blob/main/README.md
+#!icon= 插件的图标
+#!system = iOS,iPadOS,tvOS,macOS
+#!system_version = 18
+#!loon_version = 3.2.1(379)
+#!tag = 功能增强
+
+[Rule]
+DOMAIN-KEYWORD, embyplus, HK
+
+[Rewrite]
+^https:\/\/emby\.embyplus\.org\/emby\/videos.* header-del User-Agent
+^https:\/\/emby\.embyplus\.org\/emby\/videos.* header-add User-Agent MediaCenter-iOS/2024111301\x20CFNetwork/1568.200.51\x20Darwin/24.1.0
+
+[MitM]
+hostname = emby.embyplus.org
