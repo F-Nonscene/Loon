@@ -2,8 +2,8 @@
 #!desc= 解除纸片人小战VidHub播放限制
 #!author= guicc
 #!homepage= https://github.com/luestr/ProxyResource/blob/main/README.md
-#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/AppleWeather.png
-#!system = iOS,iPadOS,tvOS,macOS
+#!icon = https://raw.githubusercontent.com/F-Nonscene/Loon/f8de00ab70ae8b8b54d07062e1f611e7163cb108/VidHub.png
+#!system = iOS,iPadOS,macOS
 #!system_version = 18
 #!loon_version = 3.2.1(379)
 #!tag = 功能增强
